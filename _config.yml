@@ -15,3 +15,5 @@ description: Bienvenido a mi blog en GitHub Pages usando un tema bonito.
 header_pages:
   - index.md
   - about.md
+  - proyectos.md
+  - contacto.md
