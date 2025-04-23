@@ -6,7 +6,9 @@ title: Inicio
 # Bienvenido a mi blog
 
 Contenido de bienvenida...
-<!--cometarios -->
+
+<!-- Comentarios -->
+
 {{ content }}
 
 {% if page.comments %}
