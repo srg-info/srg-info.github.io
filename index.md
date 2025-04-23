@@ -6,7 +6,6 @@ title: Inicio
 # Bienvenido a mi blog
 
 Contenido de bienvenida...
-<!-- mo blog usa la erramienta ttps://giscus.app/es; la cual me permite que puedas contactarte con la comunidad a travez de los -->
 <!--cometarios -->
 {{ content }}
 
