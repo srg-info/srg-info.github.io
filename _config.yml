@@ -1,4 +1,12 @@
-theme: minima
+theme: jekyll-theme-cayman
+#minima
+#jekyll-theme-slate
+#jekyll-theme-leap-day
+#jekyll-theme-midnight
+#jekyll-theme-merlot
+#jekyll-theme-modernist
+
+
 title: Mi Blog
 description: Bienvenido a mi blog en GitHub Pages usando un tema bonito.
 
