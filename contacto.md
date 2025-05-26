@@ -20,4 +20,4 @@ Ayuda a filtrar y facilitar futuras comunicaciones.
 
 ¡Puedes contactarme a través de mis redes o email!
 
-@srg.it.audit@proto.me
+srg.it.audit@proto.me
