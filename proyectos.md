@@ -7,8 +7,6 @@ permalink: /proyectos/
 Aquí puedes ver los proyectos o trabajos realizados.
 
 
-title: Perte 1
-
 1. Cómo automatizar tareas repetitivas con Python (ejemplo básico)
 Un mini proyecto explicativo y útil.
 
