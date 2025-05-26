@@ -6,15 +6,20 @@ permalink: /proyectos/
 
 Aquí puedes ver los proyectos o trabajos realizados.
 
+---
+layout: page
+title: Perte 1
+permalink: /proyectos/
+---
 
-Cómo automatizar tareas repetitivas con Python (ejemplo básico)
+1. Cómo automatizar tareas repetitivas con Python (ejemplo básico)
 Un mini proyecto explicativo y útil.
 
-Mi experiencia usando VMware Workstation para pruebas seguras
+2. Mi experiencia usando VMware Workstation para pruebas seguras
 Caso de uso técnico para mostrar conocimiento real.
 
-Proyecto personal: sitio web responsive desde cero con HTML/CSS/JS
+3. Proyecto personal: sitio web responsive desde cero con HTML/CSS/JS
 Muestra lo que sabes hacer con diseño web.
 
-Guía rápida para hacer una auditoría informática básica
+4. Guía rápida para hacer una auditoría informática básica
 Aplicación de tus cursos en un ejemplo práctico y útil.
