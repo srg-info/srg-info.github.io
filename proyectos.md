@@ -6,11 +6,8 @@ permalink: /proyectos/
 
 Aquí puedes ver los proyectos o trabajos realizados.
 
----
-layout: page
+
 title: Perte 1
-permalink: /proyectos/
----
 
 1. Cómo automatizar tareas repetitivas con Python (ejemplo básico)
 Un mini proyecto explicativo y útil.
