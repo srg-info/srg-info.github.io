@@ -4,8 +4,6 @@ title: Contacto
 permalink: /contacto/
 ---
 
-title: Pregutas rapidas
-
 ¿En qué puedo ayudarte? Basada en áreas donde puedo colaborar contigo en TI
 Una lista clara de tus servicios o conocimientos.
 
