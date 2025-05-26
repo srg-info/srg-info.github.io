@@ -4,11 +4,7 @@ title: Contacto
 permalink: /contacto/
 ---
 
----
-layout: page
 title: Pregutas rapidas
-permalink: /contacto/
----
 
 ¿En qué puedo ayudarte? Basada en áreas donde puedo colaborar contigo en TI
 Una lista clara de tus servicios o conocimientos.
