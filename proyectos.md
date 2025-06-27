@@ -6,6 +6,11 @@ permalink: /proyectos/
 
 Aquí puedes ver los proyectos o trabajos realizados.
 
+Proyectos e la carrera ITZO:  
+[Ver en GitHub](cntacto.md)
+Proyectos e la carrera ICAIF:  
+[Ver en GitHub](index.md)
+
 
 1. Cómo automatizar tareas repetitivas con Python (ejemplo básico)
 Un mini proyecto explicativo y útil.
