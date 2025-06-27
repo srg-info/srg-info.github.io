@@ -8,7 +8,7 @@ Aquí puedes ver los proyectos o trabajos realizados.
 
 Proyectos desarrollados en el ITZO:[Ver](ITSZO.md)
 Proyectos desarrollados en el ICAIF:[Ver](ICAIF.md)
-Proyectos profesionales:[Ver](Profecionales.md)
+Proyectos profesionales:[Ver](Profesionales.md)
 
 
 1. Cómo automatizar tareas repetitivas con Python (ejemplo básico)
