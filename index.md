@@ -47,10 +47,6 @@ Porque creo en el aprendizaje continuo y en compartir conocimiento. Aquí docume
 
 ---
 
-¿Quieres ver mis proyectos? 👉 [Visita la sección de proyectos](/ICAIF)
+¿Quieres ver mis proyectos? 👉 Visita la sección de proyectos
 
-¿Te interesa dejar un comentario? 👉 Revisa los artículos en el blog
-
----
-
-© 2025 | Sitio creado con ❤️ y GitHub Pages
+¿Te interesa dejar un comentario? 👉 Revisa los artículos en la sección de proyectos
