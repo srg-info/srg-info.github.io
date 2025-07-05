@@ -6,21 +6,27 @@ permalink: /proyectos/
 
 ## Aquí puedes ver los proyectos o trabajos realizados.
 ---
-## 📌 Proyectos desarrollados en el ITZO: [Ver](ITSZO.md)
+📌 Proyectos desarrollados en el ITZO: [Ver](ITSZO.md)
 ---
-## 📌Proyectos desarrollados en el ICAIF: [Ver](ICAIF.md)
+📌Proyectos desarrollados en el ICAIF: [Ver](ICAIF.md)
 ---
-## 📌 Proyectos profesionales: [Ver](Profesionales.md)
+📌 Proyectos profesionales: [Ver](Profesionales.md)
 
 
-1. Cómo automatizar tareas repetitivas con Python (ejemplo básico)
-Un mini proyecto explicativo y útil.
+<details>
+<summary><strong>1. Automatizando tareas repetitivas con Python
+En el mundo de la tecnología, muchas tareas rutinarias se pueden automatizar para ahorrar tiempo y evitar errores.
+En este mini proyecto, utilicé Python para renombrar archivos automáticamente en una carpeta, agregando la fecha al nombre de cada archivo. Es un ejemplo básico, pero muy útil para empezar a usar scripts en el trabajo diario.</strong></summary>
+import os
+from datetime import datetime
 
-2. Mi experiencia usando VMware Workstation para pruebas seguras
-Caso de uso técnico para mostrar conocimiento real.
+fecha = datetime.now().strftime("%Y%m%d")
+carpeta = "C:/archivos"
 
-3. Proyecto personal: sitio web responsive desde cero con HTML/CSS/JS
-Muestra lo que sabes hacer con diseño web.
-
-4. Guía rápida para hacer una auditoría informática básica
-Aplicación de tus cursos en un ejemplo práctico y útil.
+for nombre in os.listdir(carpeta):
+    origen = os.path.join(carpeta, nombre)
+    destino = os.path.join(carpeta, f"{fecha}_{nombre}")
+    os.rename(origen, destino)
+--
+Esto permite procesar documentos, imágenes o logs automáticamente con solo ejecutar el script
+</details>
