@@ -10,6 +10,7 @@ permalink: /about/
 
 ### 👨‍💻 Sobre mí
 --
+
 Soy una persona apasionada por la tecnología y el aprendizaje constante. Me encuentro explorando el desarrollo web, la automatización y la gestión de proyectos de TI.
 
 Actualmente, utilizo **GitHub Pages como una plataforma para compartir mis ideas, experiencias y proyectos personales**.  
