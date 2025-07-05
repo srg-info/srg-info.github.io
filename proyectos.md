@@ -19,7 +19,7 @@ permalink: /proyectos/
 
 🔹1. Automatizando tareas repetitivas con Python
 En el mundo de la tecnología, muchas tareas rutinarias se pueden automatizar para ahorrar tiempo y evitar errores.
-En este mini proyecto, utilicé Python para renombrar archivos automáticamente en una carpeta, agregando la fecha al nombre de cada archivo. Es un ejemplo básico, pero muy útil para empezar a usar scripts en el trabajo diario. Ver en Git-hub (aqui ()).
+En este mini proyecto, utilicé Python para renombrar archivos automáticamente en una carpeta, agregando la fecha al nombre de cada archivo. Es un ejemplo básico, pero muy útil para empezar a usar scripts en el trabajo diario. 👉 [Ver en Git-hub](https://github.com/srg-info/py_archivos_fecha.git).
 Esto permite procesar documentos, imágenes o logs automáticamente con solo ejecutar el script.
 
 🔹2. Usando VMware Workstation para pruebas seguras
