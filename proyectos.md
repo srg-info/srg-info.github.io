@@ -5,15 +5,15 @@ permalink: /proyectos/
 ---
 
 ## Aquí puedes ver los proyectos o trabajos realizados.
-
+<div style="border:1px solid #ddd; padding: 1em; border-radius: 10px; background-color:#f9f9f9;">
 📌 Proyectos desarrollados en el ITZO: [Ver](ITSZO.md)
 
 📌Proyectos desarrollados en el ICAIF: [Ver](ICAIF.md)
 
 📌 Proyectos profesionales: [Ver](Profesionales.md)
-
+</div>
 ## Artículos 
-
+<div style="border:1px solid #ddd; padding: 1em; border-radius: 10px; background-color:#f9f9f9;">
 🔹 Título:
 "Mis proyectos y herramientas en TI: del desarrollo a la auditoría"
 
@@ -49,6 +49,7 @@ Con base en lo aprendido en cursos de seguridad informática, desarrollé una pe
 📁 Control de accesos y respaldos (pdf)
 
 Esta auditoría la hice en una red doméstica como simulación, y documenté hallazgos, mejoras y recomendaciones.
+</div>
 
 ## 🔐 Este contenido se realizo con fines exclusivamente educativos y demostrativos.
 No promueve el uso indebido de herramientas, ni viola políticas de uso de software, privacidad o seguridad.
