@@ -8,7 +8,8 @@ title: Inicio
 Este espacio es más que un blog o un repositorio. Es mi forma de compartir experiencias, aprendizajes y proyectos reales en el mundo de las Tecnologías de la Información (TI). Aquí encontrarás reflexiones, artículos y recursos sobre cómo la tecnología está cambiando nuestras vidas, incluso cuando no lo notamos.
 
 ---
-
+<div style="border:1px solid #ddd; padding: 1em; border-radius: 10px; background-color:#f9f9f9;">
+  
 ## 📚 Artículos destacados
 
 <details>
@@ -38,7 +39,7 @@ Desde un cajero automático hasta un microondas inteligente: la TI invisible que
 Síntomas como fatiga visual, estrés digital y *burnout tecnológico*. Cómo detectarlos a tiempo y cuidar tu bienestar en un entorno cada vez más conectado.
 
 </details>
-
+</div>
 ---
 
 ## 🚀 ¿Por qué este sitio?
