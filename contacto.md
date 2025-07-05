@@ -4,20 +4,61 @@ title: Contacto
 permalink: /contacto/
 ---
 
-¿En qué puedo ayudarte? Basada en áreas donde puedo colaborar contigo en TI
-Una lista clara de tus servicios o conocimientos.
+# 📬 Contacto
 
-Preguntas frecuentes que recibo como técnico TI
-Contenido útil que ahorra tiempo y demuestra experiencia.
+¿En qué puedo ayudarte? A continuación te comparto las áreas donde puedo colaborar contigo dentro del mundo de las Tecnologías de la Información.
 
-Cómo organizo capacitaciones sobre tecnología paso a paso
-Útil si das cursos o talleres.
+---
 
-¿Necesitas soporte o asesoría? Lo que debes saber antes de contactarme
-Ayuda a filtrar y facilitar futuras comunicaciones.
+## 💼 Áreas de experiencia
 
+- Soporte técnico y mantenimiento de equipos
+- Automatización de tareas con Python
+- Implementación de soluciones básicas de red
+- Diseño de sitios web con HTML/CSS/JS
+- Documentación y análisis técnico
+- Gestión básica de bases de datos en SQL
 
+---
 
-¡Puedes contactarme a través de mis redes o email!
+## ❓ Preguntas frecuentes
 
-srg.it.audit@proto.me
+**🛠️ “¿Puedes ayudarme con un problema en mi PC?”**  
+Sí, doy soporte remoto en sistemas operativos Windows y Linux.
+
+**💾 “¿Haces respaldos o formateo con reinstalación de software?”**  
+Sí, también puedo incluir instalación de software libre u Office, según lo acordado.
+
+**📚 “¿Ofreces talleres o capacitaciones?”**  
+Sí, puedo organizar sesiones virtuales sobre temas básicos de TI, uso de herramientas digitales o introducción a programación.
+
+---
+
+## 📢 Antes de contactarme...
+
+Para poder ayudarte mejor, por favor incluye en tu mensaje:
+
+- Descripción breve del problema o necesidad
+- Sistema operativo y equipo que estás utilizando
+- Disponibilidad horaria (si se requiere sesión en vivo)
+- Urgencia del caso (para priorizar)
+
+---
+
+## 📩 Escríbeme
+
+Puedes escribirme directamente a:
+
+📧 [srg.it.audit@proto.me](mailto:srg.it.audit@proto.me)
+
+---
+
+## 🌐 También me puedes encontrar en:
+
+- GitHub → [Tu perfil](https://github.com/tuusuario)
+- LinkedIn → [Tu perfil](https://linkedin.com/in/tuusuario)
+- Blog o portafolio → [Inicio](/)
+
+---
+
+> ¡Gracias por visitar mi sitio! Estoy abierto a colaboraciones, asesorías o simplemente intercambiar ideas sobre tecnología.
