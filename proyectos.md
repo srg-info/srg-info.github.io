@@ -12,7 +12,7 @@ permalink: /proyectos/
 
 📌 Proyectos profesionales: [Ver](Profesionales.md)
 
-## atriculo
+## Artículos 
 
 🔹 Título:
 "Mis proyectos y herramientas en TI: del desarrollo a la auditoría"
