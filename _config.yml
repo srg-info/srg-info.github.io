@@ -14,12 +14,7 @@ description: © 2025 | Bienvenido a mi blog en GitHub Pages usando un tema bonit
 
 # Navegación personalizada
 header_pages:
-main:
-  - title: "🏠 Inicio"
-    url: /
-  - title: "👤 Acerca de mí"
-    url: /about/
-  - title: "🛠️ Proyectos"
-    url: /proyectos/
-  - title: "📬 Contacto"
-    url: /contacto/
+  - index.md
+  - about.md
+  - proyectos.md
+  - contacto.md
