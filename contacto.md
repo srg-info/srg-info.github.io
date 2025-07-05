@@ -55,9 +55,9 @@ Puedes escribirme directamente a:
 
 ## 🌐 También me puedes encontrar en:
 
-- GitHub → [Tu perfil](https://github.com/tuusuario)
-- LinkedIn → [Tu perfil](https://linkedin.com/in/tuusuario)
-- Blog o portafolio → [Inicio](/)
+- GitHub → [perfil](https://github.com/srg-info)
+- LinkedIn → [perfil](https://www.linkedin.com/in/ing-sergio/)
+- Blog o portafolio → [Inicio](/...)
 
 ---
 
