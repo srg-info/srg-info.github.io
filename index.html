@@ -3,92 +3,148 @@ layout: default
 title: Inicio
 ---
 
-<style>
-body {
-  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  line-height: 1.7;
-  color: #2e2e2e;
-  background-color: #ffffff;
-  padding: 20px;
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio TI | Inicio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0a66c2;
+      --bg-light: #f4f7fa;
+      --text-dark: #1e1e1e;
+      --text-light: #555;
+      --box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background-color: #ffffff;
+      color: var(--text-dark);
+      line-height: 1.7;
+    }
+    header {
+      background-color: var(--bg-light);
+      padding: 40px 20px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.1em;
+      color: var(--text-light);
+    }
+    .container {
+      max-width: 960px;
+      margin: auto;
+      padding: 20px;
+    }
+    section {
+      margin-top: 60px;
+    }
+    .box {
+      background-color: var(--bg-light);
+      border-radius: 10px;
+      padding: 30px;
+      margin-bottom: 40px;
+      box-shadow: var(--box-shadow);
+    }
+    .box h2 {
+      margin-top: 0;
+      color: var(--primary);
+    }
+    details summary {
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 1.1em;
+      margin: 15px 0;
+    }
+    details p {
+      margin-top: 10px;
+      color: var(--text-light);
+    }
+    .cta-links a {
+      display: inline-block;
+      margin: 10px 10px 0 0;
+      padding: 10px 20px;
+      background-color: var(--primary);
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .cta-links a:hover {
+      background-color: #084a92;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #999;
+      padding: 30px 10px 10px;
+    }
+  </style>
+</head>
+<body>
 
-h1, h2, h3 {
-  color: #1a1a1a;
-}
-
-.container {
-  max-width: 900px;
-  margin: auto;
-}
-
-.box {
-  border: 1px solid #e0e0e0;
-  border-radius: 10px;
-  background-color: #f4f7fa;
-  padding: 20px;
-  margin-bottom: 30px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-}
-
-details summary {
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 1.1em;
-  margin: 10px 0;
-}
-
-details p {
-  margin-top: 10px;
-}
-</style>
+<header>
+  <h1>🧠 Tecnología, Seguridad y Automatización</h1>
+  <p>Un espacio profesional donde comparto lo que sé hacer en el mundo real de las TI.</p>
+</header>
 
 <div class="container">
 
-# 👋 Bienvenido a mi espacio sobre Tecnología e Innovación
+  <section class="box">
+    <h2>📚 Artículos Técnicos Destacados</h2>
+    <details>
+      <summary>💡 ¿Qué es TI y por qué está en todas partes?</summary>
+      <p>Una introducción clara y directa al universo de las Tecnologías de la Información: qué abarca, por qué es esencial en la transformación digital y cómo está presente en cada industria.</p>
+    </details>
 
-Más que un blog, este sitio es mi **laboratorio digital**, donde comparto ideas, experiencias reales y proyectos del mundo de las **Tecnologías de la Información (TI)**.
+    <details>
+      <summary>🚶‍♂️ Caminar también es tecnología: gadgets para moverte mejor</summary>
+      <p>Explora cómo los <em>wearables</em>, apps de salud y sensores biométricos están revolucionando lo cotidiano. Porque caminar también puede ser una experiencia inteligente.</p>
+    </details>
 
-Aquí convergen el análisis técnico, la reflexión crítica y la pasión por cómo la tecnología transforma el presente... y anticipa el futuro.
+    <details>
+      <summary>🔍 La tecnología que usamos sin darnos cuenta</summary>
+      <p>Desde un microondas conectado hasta un cajero automático: descubre la TI invisible que optimiza nuestro día a día. Automatización, IoT y sistemas embebidos en acción.</p>
+    </details>
 
----
+    <details>
+      <summary>🧠 ¿Trabajas en TI? 5 señales de que necesitas un descanso digital</summary>
+      <p>Fatiga visual, estrés digital, <em>burnout</em> tecnológico. Aprende a identificar los signos y cuidar tu salud mental en un entorno hiperconectado.</p>
+    </details>
+  </section>
 
-<div class="box">
+  <section>
+    <h2>🚀 ¿Por qué este sitio?</h2>
+    <p>
+      Porque <strong>compartir conocimiento es evolucionar</strong>. Documentar lo que aprendo, experimento y aplico es parte de mi camino como profesional en TI.
+      Este sitio es para quienes creemos que el conocimiento debe circular, que la tecnología debe entenderse desde lo humano y lo técnico, y que siempre hay algo nuevo por aprender.
+    </p>
+  </section>
 
-## 📚 Artículos destacados
-
-<details>
-<summary>💡 <strong>¿Qué es TI y por qué está en todas partes?</strong></summary>
-<p>Una introducción clara y directa al universo de las Tecnologías de la Información: qué abarca, por qué es esencial en la transformación digital y cómo está presente en cada industria.</p>
-</details>
-
-<details>
-<summary>🚶‍♂️ <strong>Caminar también es tecnología: gadgets para moverte mejor</strong></summary>
-<p>Explora cómo los <em>wearables</em>, apps de salud y sensores biométricos están revolucionando lo cotidiano. Porque caminar también puede ser una experiencia inteligente.</p>
-</details>
-
-<details>
-<summary>🔍 <strong>La tecnología que usamos sin darnos cuenta</strong></summary>
-<p>Desde un microondas conectado hasta un cajero automático: descubre la TI invisible que optimiza nuestro día a día. Automatización, IoT y sistemas embebidos en acción.</p>
-</details>
-
-<details>
-<summary>🧠 <strong>¿Trabajas en TI? 5 señales de que necesitas un descanso digital</strong></summary>
-<p>Fatiga visual, estrés digital, <em>burnout</em> tecnológico. Aprende a identificar los signos y cuidar tu salud mental en un entorno hiperconectado.</p>
-</details>
-
-</div>
-
----
-
-## 🚀 ¿Por qué este sitio?
-
-Porque **compartir conocimiento es evolucionar**. Documentar lo que aprendo, experimento y aplico es parte de mi camino como profesional en TI. Este espacio es para quienes creemos que el conocimiento debe circular.
-
----
-
-### 👉 Explora más:
-
-- ¿Te interesa ver mis proyectos? Visita la [sección de proyectos](./proyectos.md)
-- ¿Tienes ideas, sugerencias o preguntas? Revisa los artículos y déjame un comentario.
+  <section class="cta-links">
+    <h2>🔗 Explora más:</h2>
+    <a href="./proyectos.md">📁 Ver proyectos</a>
+    <a href="#articulos">📖 Leer artículos</a>
+    <a href="#contacto">💬 Dejar comentario</a>
+  </section>
 
 </div>
+
+<footer>
+  © 2025 | Desarrollado por un apasionado de las TI
+</footer>
+
+</body>
+</html>
+
