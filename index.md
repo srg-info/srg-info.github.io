@@ -88,7 +88,7 @@ Porque **compartir conocimiento es evolucionar**. Documentar lo que aprendo, exp
 
 ### 👉 Explora más:
 
-- ¿Te interesa ver mis proyectos? Visita la [sección de proyectos](./proyectos.md)
+- ¿Te interesa ver mis proyectos? Visita la [sección de proyectos](/proyectos.md)
 - ¿Tienes ideas, sugerencias o preguntas? Revisa los artículos y déjame un comentario.
 
 </div>
