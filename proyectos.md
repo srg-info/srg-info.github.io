@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-  max-width: 950px;
+  max-width: 1050px;
   margin: auto;
   padding: 20px;
 }
@@ -27,18 +27,24 @@ body {
   padding-bottom: 5px;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
 .card {
   border: 1px solid #e1e4e8;
   border-radius: 10px;
   background-color: #f8f9fa;
   padding: 20px;
-  margin-bottom: 25px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
 .card h3 {
   margin-top: 0;
-  font-size: 1.2em;
+  font-size: 1.1em;
   color: #2c3e50;
 }
 
@@ -66,11 +72,13 @@ a.button:hover {
 
 # 🛠️ Proyectos & Artículos Técnicos
 
-Una recopilación de los proyectos en los que he participado, desarrollos personales, herramientas utilizadas y reflexiones sobre el trabajo en TI. Cada uno representa una oportunidad de aprendizaje, experimentación y mejora profesional.
+Una recopilación de proyectos académicos, desarrollos personales y soluciones aplicadas en el mundo de la Tecnología de la Información. Todos organizados para una navegación clara y profesional.
 
 ---
 
-## 📌 Proyectos académicos
+## 📌 Proyectos académicos y profesionales
+
+<div class="grid">
 
 <div class="card">
 <h3>📍 ITZO - Proyectos universitarios</h3>
@@ -79,65 +87,61 @@ Una recopilación de los proyectos en los que he participado, desarrollos person
 </div>
 
 <div class="card">
-<h3>📍 ICAIF - Proyectos en prácticas profesionales</h3>
-<p>Colaboraciones en soluciones tecnológicas aplicadas al entorno educativo y administrativo.</p>
+<h3>📍 ICAIF - Prácticas profesionales</h3>
+<p>Desarrollo de herramientas administrativas, soporte técnico y digitalización de procesos educativos.</p>
 <a class="button" href="ICAIF.md">Ver proyectos</a>
 </div>
 
 <div class="card">
 <h3>📍 Proyectos profesionales</h3>
-<p>Desarrollos reales aplicados en entornos de trabajo, desde automatización hasta auditoría.</p>
+<p>Aplicaciones y scripts utilizados en entornos reales de trabajo, enfocados en productividad y auditoría.</p>
 <a class="button" href="Profesionales.md">Ver proyectos</a>
+</div>
+
+<div class="card">
+<h3>🔹 Proyecto: Automatización con Python</h3>
+<p>Renombrado automático de archivos con fecha usando Python. Ideal para gestionar documentos, imágenes o logs.</p>
+<a class="button" href="https://github.com/srg-info/py_archivos_fecha.git">Ver en GitHub</a>
+</div>
+
 </div>
 
 ---
 
-## 📄 Artículos técnicos destacados
+## 📄 Artículos técnicos y personales
+
+<div class="grid">
 
 <div class="card">
-<h3>🔹 Automatizando tareas repetitivas con Python</h3>
-<p>Script para renombrar archivos automáticamente agregando la fecha. Útil para organizar imágenes, logs o documentos.</p>
-<a class="button" href="https://github.com/srg-info/py_archivos_fecha.git">Ver en GitHub</a>
-</div>
-
-<div class="card">
-<h3>🔹 Laboratorios virtuales con VMware Workstation</h3>
-<p>Creación de entornos virtuales para pruebas seguras con Kali Linux, Windows y simulación de auditorías de red.</p>
+<h3>🔹 Laboratorios con VMware Workstation</h3>
+<p>Creación de máquinas virtuales para practicar pruebas de red, seguridad y automatización sin afectar el entorno físico.</p>
 <ul>
-  <li>Prácticas de comandos de red en Linux.</li>
-  <li>Instalación de sistemas operativos en entornos aislados.</li>
-  <li>Simulación de escenarios de seguridad y automatización de configuraciones.</li>
+  <li>Kali Linux y Windows para simulaciones.</li>
+  <li>Scripts de configuración en entornos aislados.</li>
 </ul>
 </div>
 
 <div class="card">
-<h3>🔹 Proyecto personal: sitio web responsive</h3>
-<p>Diseño y desarrollo de un sitio web 100% desde cero usando HTML, CSS y JavaScript.</p>
-<ul>
-  <li>Diseño responsive (adaptado a móviles).</li>
-  <li>Animaciones, formularios y enlaces funcionales.</li>
-  <li>Alojado en GitHub Pages como portafolio personal.</li>
-</ul>
+<h3>🔹 Sitio web responsive desde cero</h3>
+<p>Portafolio personal creado con HTML, CSS y JavaScript, 100% adaptable a dispositivos móviles. Animaciones, formularios y más.</p>
 <a class="button" href="https://srg-info.github.io">Ver mi sitio</a>
 </div>
 
 <div class="card">
-<h3>🔹 Guía práctica de auditoría informática</h3>
-<p>Simulación de auditoría de red doméstica basada en buenas prácticas de ciberseguridad:</p>
+<h3>🔹 Guía básica de auditoría informática</h3>
+<p>Simulación de auditoría casera con buenas prácticas:</p>
 <ul>
-  <li>🖥️ Inventario de hardware y software</li>
-  <li>🔒 Revisión de contraseñas y políticas</li>
-  <li>🧪 Escaneo de red con Nmap</li>
-  <li>📁 Evaluación de respaldos y controles de acceso</li>
+  <li>Inventario y políticas de seguridad</li>
+  <li>Escaneo de red con Nmap</li>
+  <li>Control de accesos y respaldos</li>
 </ul>
-<p>Documentación elaborada en formato PDF con hallazgos, mejoras y recomendaciones.</p>
 </div>
 
----
-
 <div class="card">
-<h3>🔐 Importante</h3>
-<p>Todo el contenido compartido tiene fines educativos y demostrativos. Las pruebas se realizaron en entornos controlados sin vulnerar ninguna política de privacidad, software o seguridad.</p>
+<h3>🔐 Nota de responsabilidad</h3>
+<p>Todos los contenidos aquí presentados fueron realizados con fines educativos, en entornos de prueba. No se promueve el uso indebido de software o técnicas de auditoría.</p>
+</div>
+
 </div>
 
 </div>
