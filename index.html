@@ -1,0 +1,214 @@
+---
+layout: default
+title: Inicio
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Portafolio TI</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Roboto, sans-serif;
+      background-color: #fdfdfd;
+      color: #2e2e2e;
+      line-height: 1.6;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h1, h2 {
+      color: #1a1a1a;
+    }
+
+    .section-title {
+      font-size: 1.9em;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+    }
+
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 30px;
+    }
+
+    .filter-button {
+      background-color: #007acc;
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .filter-button:hover {
+      background-color: #005f99;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background-color: #f8f9fa;
+      border: 1px solid #e1e4e8;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      font-size: 1.2em;
+    }
+
+    .card .tags {
+      font-size: 0.9em;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 6px 12px;
+      background-color: #007acc;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .placeholder {
+      color: #888;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+<h1>🛠️ Portafolio de Proyectos TI</h1>
+<p>Filtra los proyectos por área temática según tu interés:</p>
+
+<h2 class="section-title">🎛️ Filtrar por categoría</h2>
+
+<div class="filters">
+  <button class="filter-button" onclick="filterCards('all')">🔍 Todos</button>
+  <button class="filter-button" onclick="filterCards('soporte')">📋 Soporte Técnico</button>
+  <button class="filter-button" onclick="filterCards('redes')">🌐 Redes</button>
+  <button class="filter-button" onclick="filterCards('bd')">🗄️ Bases de Datos</button>
+  <button class="filter-button" onclick="filterCards('fortinet')">🛡️ Fortinet</button>
+  <button class="filter-button" onclick="filterCards('excel')">📊 Excel</button>
+  <button class="filter-button" onclick="filterCards('mantenimiento')">🧰 Mantenimiento</button>
+  <button class="filter-button" onclick="filterCards('apps')">💻 Aplicaciones</button>
+  <button class="filter-button" onclick="filterCards('captura')">📥 Captura de Datos</button>
+  <button class="filter-button" onclick="filterCards('so')">🖥️ Sistemas Operativos</button>
+  <button class="filter-button" onclick="filterCards('seguridad')">🧮 Ciberseguridad</button>
+  <button class="filter-button" onclick="filterCards('auditoria')">🔍 Auditoría</button>
+  <button class="filter-button" onclick="filterCards('automatizacion')">⚙️ Automatización</button>
+  <button class="filter-button" onclick="filterCards('virtualizacion')">💾 Virtualización</button>
+  <button class="filter-button" onclick="filterCards('comunicaciones')">📡 Comunicaciones</button>
+  <button class="filter-button" onclick="filterCards('usuarios')">👤 Administración de usuarios</button>
+</div>
+
+<div class="grid">
+
+  <!-- Proyecto 1 -->
+  <div class="card soporte apps automatizacion">
+    <h3>🔄 Automatización de archivos con Python</h3>
+    <p>Script para renombrar archivos agregando fecha. Optimiza flujos rutinarios.</p>
+    <div class="tags">📋 Soporte Técnico, 💻 Aplicaciones, ⚙️ Automatización</div>
+    <a class="button" href="https://github.com/srg-info/py_archivos_fecha.git">Ver en GitHub</a>
+  </div>
+
+  <!-- Proyecto 2 -->
+  <div class="card redes seguridad fortinet virtualizacion so">
+    <h3>🧪 Laboratorio de redes con Kali y VMware</h3>
+    <p>Pruebas de red, escaneos de puertos, simulación de ataques en entorno controlado.</p>
+    <div class="tags">🌐 Redes, 🛡️ Fortinet, 💾 Virtualización</div>
+    <span class="placeholder">🚧 En construcción</span>
+  </div>
+
+  <!-- Proyecto 3 -->
+  <div class="card apps captura">
+    <h3>🌐 Sitio Web Responsive</h3>
+    <p>Diseño web moderno con HTML, CSS y JS. Adaptable y alojado en GitHub Pages.</p>
+    <div class="tags">💻 Aplicaciones, 📥 Captura de Datos</div>
+    <a class="button" href="https://srg-info.github.io">Ver sitio</a>
+  </div>
+
+  <!-- Proyecto 4 -->
+  <div class="card auditoria fortinet seguridad mantenimiento">
+    <h3>🔐 Guía práctica de Auditoría</h3>
+    <p>Simulación de auditoría doméstica. Checklists, escaneos, contraseñas y seguridad básica.</p>
+    <div class="tags">🔍 Auditoría, 🛡️ Fortinet, 🧰 Mantenimiento</div>
+    <span class="placeholder">🚧 En construcción</span>
+  </div>
+
+  <!-- Proyecto 5 -->
+  <div class="card excel captura usuarios">
+    <h3>📊 Reportes automatizados en Excel</h3>
+    <p>Uso de macros y gráficos para monitoreo mensual de usuarios y actividad operativa.</p>
+    <div class="tags">📊 Excel, 📥 Captura de Datos, 👤 Administración de usuarios</div>
+    <span class="placeholder">🚧 En construcción</span>
+  </div>
+
+  <!-- Proyecto 6 -->
+  <div class="card mantenimiento soporte">
+    <h3>🛠️ Mantenimiento preventivo de equipos</h3>
+    <p>Checklist de diagnóstico, limpieza, actualizaciones de software y post-servicio.</p>
+    <div class="tags">🧰 Mantenimiento, 📋 Soporte Técnico</div>
+    <span class="placeholder">🚧 En construcción</span>
+  </div>
+
+  <!-- Proyecto 7 -->
+  <div class="card captura apps excel">
+    <h3>🧾 Captura y envío automático de datos</h3>
+    <p>Formulario en línea que exporta a Excel y envía datos a correo. Validación incluida.</p>
+    <div class="tags">📥 Captura de Datos, 📊 Excel</div>
+    <span class="placeholder">🚧 En construcción</span>
+  </div>
+
+  <!-- Proyecto 8 -->
+  <div class="card bd soporte">
+    <h3>🗄️ Modelo de base de datos de inventario TI</h3>
+    <p>Diseño relacional en SQL, relaciones con claves foráneas, vistas de activos.</p>
+    <div class="tags">🗄️ Bases de Datos, 📋 Soporte Técnico</div>
+    <span class="placeholder">🚧 En construcción</span>
+  </div>
+
+</div>
+
+<script>
+function filterCards(category) {
+  const cards = document.querySelectorAll('.card');
+  cards.forEach(card => {
+    if (category === 'all') {
+      card.style.display = 'block';
+    } else {
+      if (card.classList.contains(category)) {
+        card.style.display = 'block';
+      } else {
+        card.style.display = 'none';
+      }
+    }
+  });
+}
+</script>
+
+</body>
+</html>
