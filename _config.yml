@@ -1,5 +1,5 @@
-theme: minima
-#jekyll-theme-modernist
+theme: jekyll-theme-modernist
+#minima
 #jekyll-theme-merlot
 #jekyll-theme-cayman
 #jekyll-theme-slate
@@ -15,6 +15,6 @@ description: © 2025 | Bienvenido a mi blog en GitHub Pages usando un tema bonit
 # Navegación personalizada
 header_pages:
   - index.html
-  - about.md
+  - about.html
   - proyectos.html
   - contacto.html
