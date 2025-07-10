@@ -8,19 +8,18 @@ permalink: /proyectos/
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portafolio TI Profesional</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portafolio TI Profesional – Proyectos con Reacciones</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
   <style>
     body {
       font-family: 'Inter', sans-serif;
       background-color: #f9f9f9;
       color: #2e2e2e;
       padding: 20px;
-      margin: 0;
+      margin: 0 auto;
       max-width: 1200px;
-      margin: auto;
     }
     h1, h2 {
       color: #1a1a1a;
@@ -78,49 +77,22 @@ permalink: /proyectos/
       color: #999;
       font-style: italic;
     }
-                                                ---aqui comienza
-    {
-      font-family: 'Inter', sans-serif;
-      padding: 40px;
-      background-color: #f9fafc;
-      color: #2c2c2c;
-      max-width: 900px;
-      margin: auto;
-    }
-    h1 {
-      color: #0a66c2;
-    }
-    .project {
-      background: #ffffff;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      padding: 20px;
-      margin-bottom: 25px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-    }
     .reaction-buttons {
-      margin-top: 10px;
+      margin-top: 15px;
     }
     .reaction-buttons button {
-      margin-right: 8px;
-      background-color: #e9eff6;
+      background-color: #e1ecf4;
       border: none;
-      border-radius: 5px;
-      padding: 6px 12px;
+      padding: 6px 10px;
+      margin-right: 8px;
+      border-radius: 4px;
       cursor: pointer;
       font-weight: 600;
-      transition: background 0.2s ease;
-    }
-    .reaction-buttons button:hover {
-      background-color: #d3e3f3;
     }
     .reaction-count {
-      display: inline-block;
-      margin-left: 6px;
+      margin-left: 5px;
       font-weight: 500;
-      color: #444;
-    }                              
-                                                      ---aqui termina
+    }
   </style>
 </head>
 <body>
@@ -146,15 +118,13 @@ permalink: /proyectos/
   <div class="card python retos">
     <h3>📂 Automatización de renombrado de archivos</h3>
     <p>Script en Python que agrega fecha automáticamente al nombre de cada archivo dentro de una carpeta.</p>
-    <div class="tags">🐍 Python, 🏁 Retos</div>
-
-     <div class="reaction-buttons">
-      👍 <button onclick="addReaction('py-archivos', 'like')">Me gusta <span class="reaction-count" id="like-py-archivos">0</span></button>
-      💡 <button onclick="addReaction('py-archivos', 'idea')">Interesante <span class="reaction-count" id="idea-py-archivos">0</span></button>
-      ❓ <button onclick="addReaction('py-archivos', 'question')">Tengo dudas <span class="reaction-count" id="question-py-archivos">0</span></button>
-    </div>
-    
+    <div class="tags">🐍 Python, 🏁 Retos</div>    
     <a class="button" href="https://github.com/srg-info/py_archivos_fecha.git" target="_blank">Ver en GitHub</a>
+    <div class="reaction-buttons">
+      👍 <button onclick="addReaction('bd-icaif', 'like')">Me gusta <span class="reaction-count" id="like-bd-icaif">0</span></button>
+      💡 <button onclick="addReaction('bd-icaif', 'idea')">Interesante <span class="reaction-count" id="idea-bd-icaif">0</span></button>
+      ❓ <button onclick="addReaction('bd-icaif', 'question')">Tengo dudas <span class="reaction-count" id="question-bd-icaif">0</span></button>
+    </div>
   </div>
 
   <div class="card bd">
@@ -162,6 +132,11 @@ permalink: /proyectos/
     <p>Modelo relacional funcional con inserciones, consultas y control de datos en entorno educativo real.</p>
     <div class="tags">🗄️ Bases de Datos</div>
     <a class="button" href="https://github.com/srg-info/bd_venta_icaif.git" target="_blank">Ver en GitHub</a>
+     <div class="reaction-buttons">
+      👍 <button onclick="addReaction('bd-icaif', 'like')">Me gusta <span class="reaction-count" id="like-bd-icaif">0</span></button>
+      💡 <button onclick="addReaction('bd-icaif', 'idea')">Interesante <span class="reaction-count" id="idea-bd-icaif">0</span></button>
+      ❓ <button onclick="addReaction('bd-icaif', 'question')">Tengo dudas <span class="reaction-count" id="question-bd-icaif">0</span></button>
+    </div>
   </div>
 
   <div class="card python seguridad retos">
@@ -219,17 +194,36 @@ permalink: /proyectos/
 function filterCards(category) {
   const cards = document.querySelectorAll('.card');
   cards.forEach(card => {
-    if (category === 'all') {
+    if (category === 'all' || card.classList.contains(category)) {
       card.style.display = 'block';
     } else {
-      if (card.classList.contains(category)) {
-        card.style.display = 'block';
-      } else {
-        card.style.display = 'none';
-      }
+      card.style.display = 'none';
     }
   });
 }
+
+const reactions = ['like', 'idea', 'question'];
+function loadReactions(projectId) {
+  reactions.forEach(reaction => {
+    const count = localStorage.getItem(`${projectId}-${reaction}`) || 0;
+    document.getElementById(`${reaction}-${projectId}`).innerText = count;
+  });
+}
+
+function addReaction(projectId, reactionType) {
+  const key = `${projectId}-${reactionType}`;
+  let current = parseInt(localStorage.getItem(key) || '0');
+  current += 1;
+  localStorage.setItem(key, current);
+  document.getElementById(`${reactionType}-${projectId}`).innerText = current;
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll(".card").forEach(card => {
+    const id = card.getAttribute("data-id");
+    if (id) loadReactions(id);
+  });
+});
 </script>
 
 </body>
