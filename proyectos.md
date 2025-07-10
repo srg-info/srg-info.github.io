@@ -4,52 +4,140 @@ title: Proyectos
 permalink: /proyectos/
 ---
 
-## Aquí puedes ver los proyectos o trabajos realizados.
+<style>
+body {
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #2c3e50;
+  background-color: #ffffff;
+  line-height: 1.6;
+}
 
-📌 Proyectos desarrollados en el ITZO: [Ver](ITSZO.md)
+.container {
+  max-width: 950px;
+  margin: auto;
+  padding: 20px;
+}
 
-📌Proyectos desarrollados en el ICAIF: [Ver](ICAIF.md)
+.section-title {
+  font-size: 1.8em;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  color: #1a1a1a;
+  border-bottom: 2px solid #dedede;
+  padding-bottom: 5px;
+}
 
-📌 Proyectos profesionales: [Ver](Profesionales.md)
+.card {
+  border: 1px solid #e1e4e8;
+  border-radius: 10px;
+  background-color: #f8f9fa;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
 
-## Artículos 
+.card h3 {
+  margin-top: 0;
+  font-size: 1.2em;
+  color: #2c3e50;
+}
 
-🔹 Título:
-"Mis proyectos y herramientas en TI: del desarrollo a la auditoría"
+.card p {
+  margin: 10px 0;
+}
 
-🔹1. Automatizando tareas repetitivas con Python
-En el mundo de la tecnología, muchas tareas rutinarias se pueden automatizar para ahorrar tiempo y evitar errores.
-En este mini proyecto, utilicé Python para renombrar archivos automáticamente en una carpeta, agregando la fecha al nombre de cada archivo. Es un ejemplo básico, pero muy útil para empezar a usar scripts en el trabajo diario. 👉 [Ver en Git-hub](https://github.com/srg-info/py_archivos_fecha.git).
-Esto permite procesar documentos, imágenes o logs automáticamente con solo ejecutar el script.
+a.button {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-top: 10px;
+  background-color: #007acc;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-🔹2. Usando VMware Workstation para pruebas seguras
-Cuando necesito probar software, sistemas operativos o incluso simular ataques para fines educativos, uso VMware Workstation.
-Mi experiencia ha sido muy positiva, ya que puedo crear entornos virtuales controlados sin afectar mi equipo físico.
+a.button:hover {
+  background-color: #005f99;
+}
+</style>
 
-✔️ Por ejemplo, creé una máquina virtual con Kali Linux para practicar comandos de red y auditoría.
-✔️ También probé instalaciones de Windows sin riesgos, para luego automatizar configuraciones con scripts.
+<div class="container">
 
-🔹3. Proyecto personal: sitio web responsive desde cero
-Quise aplicar mis conocimientos de desarrollo web creando un sitio 100% desde cero usando solo HTML, CSS y JavaScript.
+# 🛠️ Proyectos & Artículos Técnicos
 
-🏗️ El sitio es responsive (se adapta a dispositivos móviles) y funciona como portafolio personal.
-Incluye animaciones, enlaces, formularios y se aloja en GitHub Pages.
+Una recopilación de los proyectos en los que he participado, desarrollos personales, herramientas utilizadas y reflexiones sobre el trabajo en TI. Cada uno representa una oportunidad de aprendizaje, experimentación y mejora profesional.
 
-🔗 My blog
+---
 
-🔹4. Guía rápida de auditoría informática básica
-Con base en lo aprendido en cursos de seguridad informática, desarrollé una pequeña guía práctica para realizar una auditoría interna:
+## 📌 Proyectos académicos
 
-🖥️ Inventario de equipos y software (pdf)
+<div class="card">
+<h3>📍 ITZO - Proyectos universitarios</h3>
+<p>Aplicaciones desarrolladas durante mi formación en el Instituto Tecnológico de Zongolica.</p>
+<a class="button" href="ITSZO.md">Ver proyectos</a>
+</div>
 
-🔒 Revisión de contraseñas y políticas de seguridad (pdf)
+<div class="card">
+<h3>📍 ICAIF - Proyectos en prácticas profesionales</h3>
+<p>Colaboraciones en soluciones tecnológicas aplicadas al entorno educativo y administrativo.</p>
+<a class="button" href="ICAIF.md">Ver proyectos</a>
+</div>
 
-🧪 Pruebas de red con herramientas como nmap (pdf)
+<div class="card">
+<h3>📍 Proyectos profesionales</h3>
+<p>Desarrollos reales aplicados en entornos de trabajo, desde automatización hasta auditoría.</p>
+<a class="button" href="Profesionales.md">Ver proyectos</a>
+</div>
 
-📁 Control de accesos y respaldos (pdf)
+---
 
-Esta auditoría la hice en una red doméstica como simulación, y documenté hallazgos, mejoras y recomendaciones.
+## 📄 Artículos técnicos destacados
 
-## 🔐 Este contenido se realizo con fines exclusivamente educativos y demostrativos.
-No promueve el uso indebido de herramientas, ni viola políticas de uso de software, privacidad o seguridad.
-Todos los ejemplos se ejecutaron en entornos de prueba controlados o personales.
+<div class="card">
+<h3>🔹 Automatizando tareas repetitivas con Python</h3>
+<p>Script para renombrar archivos automáticamente agregando la fecha. Útil para organizar imágenes, logs o documentos.</p>
+<a class="button" href="https://github.com/srg-info/py_archivos_fecha.git">Ver en GitHub</a>
+</div>
+
+<div class="card">
+<h3>🔹 Laboratorios virtuales con VMware Workstation</h3>
+<p>Creación de entornos virtuales para pruebas seguras con Kali Linux, Windows y simulación de auditorías de red.</p>
+<ul>
+  <li>Prácticas de comandos de red en Linux.</li>
+  <li>Instalación de sistemas operativos en entornos aislados.</li>
+  <li>Simulación de escenarios de seguridad y automatización de configuraciones.</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>🔹 Proyecto personal: sitio web responsive</h3>
+<p>Diseño y desarrollo de un sitio web 100% desde cero usando HTML, CSS y JavaScript.</p>
+<ul>
+  <li>Diseño responsive (adaptado a móviles).</li>
+  <li>Animaciones, formularios y enlaces funcionales.</li>
+  <li>Alojado en GitHub Pages como portafolio personal.</li>
+</ul>
+<a class="button" href="https://srg-info.github.io">Ver mi sitio</a>
+</div>
+
+<div class="card">
+<h3>🔹 Guía práctica de auditoría informática</h3>
+<p>Simulación de auditoría de red doméstica basada en buenas prácticas de ciberseguridad:</p>
+<ul>
+  <li>🖥️ Inventario de hardware y software</li>
+  <li>🔒 Revisión de contraseñas y políticas</li>
+  <li>🧪 Escaneo de red con Nmap</li>
+  <li>📁 Evaluación de respaldos y controles de acceso</li>
+</ul>
+<p>Documentación elaborada en formato PDF con hallazgos, mejoras y recomendaciones.</p>
+</div>
+
+---
+
+<div class="card">
+<h3>🔐 Importante</h3>
+<p>Todo el contenido compartido tiene fines educativos y demostrativos. Las pruebas se realizaron en entornos controlados sin vulnerar ninguna política de privacidad, software o seguridad.</p>
+</div>
+
+</div>
