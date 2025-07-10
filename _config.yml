@@ -14,7 +14,7 @@ description: © 2025 | Bienvenido a mi blog en GitHub Pages usando un tema bonit
 
 # Navegación personalizada
 header_pages:
-  - index.md
+  - index.html
   - about.md
-  - proyectos.md
+  - proyectos.html
   - contacto.md
