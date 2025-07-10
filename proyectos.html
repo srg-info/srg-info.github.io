@@ -9,16 +9,18 @@ permalink: /proyectos/
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portafolio TI Profesional</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Segoe UI', Roboto, sans-serif;
+      font-family: 'Inter', sans-serif;
       background-color: #f9f9f9;
-      color: #333;
+      color: #2e2e2e;
+      padding: 20px;
+      margin: 0;
       max-width: 1200px;
       margin: auto;
-      padding: 20px;
-      line-height: 1.6;
     }
     h1, h2 {
       color: #1a1a1a;
@@ -55,7 +57,7 @@ permalink: /proyectos/
     }
     .card h3 {
       margin-top: 0;
-      font-size: 1.2em;
+      font-size: 1.1em;
     }
     .tags {
       font-size: 0.9em;
@@ -80,69 +82,83 @@ permalink: /proyectos/
 </head>
 <body>
 
-<h1>🧠 Portafolio Técnico Profesional TI</h1>
-<p>Explora mis proyectos y experiencias organizadas por categoría técnica.</p>
+<h1>🧠 Portafolio Técnico TI – Proyectos y Retos</h1>
+<p>Explora mis proyectos clasificados por área técnica. Algunos son casos reales, otros simulaciones o retos prácticos para mejorar habilidades.</p>
 
-<h2>🎛️ Categorías</h2>
+<h2>🎯 Categorías</h2>
 <div class="filters">
   <button class="filter-button" onclick="filterCards('all')">🔍 Todos</button>
   <button class="filter-button" onclick="filterCards('python')">🐍 Python</button>
+  <button class="filter-button" onclick="filterCards('bd')">🗄️ Bases de Datos</button>
   <button class="filter-button" onclick="filterCards('seguridad')">🔐 Seguridad</button>
-  <button class="filter-button" onclick="filterCards('licencias')">💻 Software No Licenciado</button>
   <button class="filter-button" onclick="filterCards('pentesting')">💣 Pentesting</button>
   <button class="filter-button" onclick="filterCards('redes')">🌐 Redes</button>
-  <button class="filter-button" onclick="filterCards('bd')">🗄️ Bases de Datos</button>
   <button class="filter-button" onclick="filterCards('java')">☕ Java</button>
   <button class="filter-button" onclick="filterCards('laboratorio')">🧪 Laboratorios</button>
+  <button class="filter-button" onclick="filterCards('retos')">🏁 Retos</button>
 </div>
 
 <div class="grid">
 
-  <div class="card python seguridad">
-    <h3>🔑 Verificador de integridad con Python</h3>
-    <p>Script en Python que usa SHA-256 para validar que archivos no han sido alterados.</p>
-    <div class="tags">🐍 Python, 🔐 Seguridad</div>
+  <div class="card python retos">
+    <h3>📂 Automatización de renombrado de archivos</h3>
+    <p>Script en Python que agrega fecha automáticamente al nombre de cada archivo dentro de una carpeta.</p>
+    <div class="tags">🐍 Python, 🏁 Retos</div>
+    <a class="button" href="https://github.com/srg-info/py_archivos_fecha.git" target="_blank">Ver en GitHub</a>
+  </div>
+
+  <div class="card bd">
+    <h3>🗄️ Base de datos de ventas ICAIF</h3>
+    <p>Modelo relacional funcional con inserciones, consultas y control de datos en entorno educativo real.</p>
+    <div class="tags">🗄️ Bases de Datos</div>
+    <a class="button" href="https://github.com/srg-info/bd_venta_icaif.git" target="_blank">Ver en GitHub</a>
+  </div>
+
+  <div class="card python seguridad retos">
+    <h3>🔐 Verificador de integridad SHA-256</h3>
+    <p>Python para validar que archivos no han sido alterados (integridad digital). Ideal para respaldos seguros.</p>
+    <div class="tags">🐍 Python, 🔐 Seguridad, 🏁 Retos</div>
     <span class="placeholder">🚧 En construcción</span>
   </div>
 
-  <div class="card licencias seguridad">
-    <h3>🧨 Auditoría de software no licenciado</h3>
-    <p>Escaneo de estaciones con scripts para detectar programas no oficiales y generar reportes.</p>
-    <div class="tags">💻 Licencias, 🔐 Seguridad</div>
+  <div class="card seguridad licencias">
+    <h3>💻 Auditoría de software no licenciado</h3>
+    <p>Escaneo de equipos para detectar programas no oficiales e informes para toma de decisiones.</p>
+    <div class="tags">🔐 Seguridad, 💻 Licencias</div>
     <span class="placeholder">🚧 En construcción</span>
   </div>
 
   <div class="card pentesting laboratorio seguridad">
-    <h3>💣 Pentesting básico con Metasploit</h3>
-    <p>Escaneo, explotación y pruebas de penetración usando máquinas vulnerables en laboratorio.</p>
+    <h3>💣 Pentesting con Metasploit y máquinas virtuales</h3>
+    <p>Simulación de ataques controlados en entorno educativo con Kali Linux y Metasploit Framework.</p>
     <div class="tags">💣 Pentesting, 🧪 Laboratorios, 🔐 Seguridad</div>
     <span class="placeholder">🚧 En construcción</span>
   </div>
 
   <div class="card redes laboratorio">
-    <h3>📡 Escaneo de red con Wireshark</h3>
-    <p>Análisis de tráfico, detección de actividad sospechosa y protocolos no cifrados.</p>
+    <h3>🌐 Captura de tráfico con Wireshark</h3>
+    <p>Análisis de paquetes, detección de protocolos abiertos y monitoreo de tráfico inseguro en red doméstica.</p>
     <div class="tags">🌐 Redes, 🧪 Laboratorios</div>
     <span class="placeholder">🚧 En construcción</span>
   </div>
 
   <div class="card redes laboratorio">
-    <h3>📦 Simulaciones en Packet Tracer</h3>
-    <p>Laboratorio de redes con diseño de topologías, routing y pruebas de conectividad.</p>
+    <h3>📦 Topologías y VLANs en Packet Tracer</h3>
+    <p>Diseño de red, pruebas de conectividad, configuración de routers y switches virtuales en simulador.</p>
     <div class="tags">🌐 Redes, 🧪 Laboratorios</div>
     <span class="placeholder">🚧 En construcción</span>
   </div>
 
   <div class="card pentesting seguridad">
-    <h3>🔍 Análisis de sitios con Burp Suite</h3>
-    <p>Evaluación de vulnerabilidades en sitios web y comportamiento sospechoso con herramientas OSINT.</p>
+    <h3>🔍 Análisis web con Burp Suite y OSINT</h3>
+    <p>Inspección de formularios, headers, tokens y búsquedas públicas en sitios de prueba.</p>
     <div class="tags">💣 Pentesting, 🔐 Seguridad</div>
     <span class="placeholder">🚧 En construcción</span>
   </div>
 
-  <div class="card bd java">
-    <h3>☕ CRUD con Java y SQLite</h3>
-    <p>Aplicación de escritorio para gestión de inventarios con interfaz gráfica y almacenamiento local.</p>
+  <div class="card java bd">
+    <h3>☕ Aplicación Java CRUD + SQLite</h3>
+    <p>Gestión de inventario con interfaz gráfica en Java. Inserta, consulta, actualiza y elimina datos.</p>
     <div class="tags">☕ Java, 🗄️ Bases de Datos</div>
     <span class="placeholder">🚧 En construcción</span>
   </div>
