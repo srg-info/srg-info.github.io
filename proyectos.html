@@ -78,6 +78,49 @@ permalink: /proyectos/
       color: #999;
       font-style: italic;
     }
+                                                ---aqui comienza
+    {
+      font-family: 'Inter', sans-serif;
+      padding: 40px;
+      background-color: #f9fafc;
+      color: #2c2c2c;
+      max-width: 900px;
+      margin: auto;
+    }
+    h1 {
+      color: #0a66c2;
+    }
+    .project {
+      background: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 25px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .reaction-buttons {
+      margin-top: 10px;
+    }
+    .reaction-buttons button {
+      margin-right: 8px;
+      background-color: #e9eff6;
+      border: none;
+      border-radius: 5px;
+      padding: 6px 12px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background 0.2s ease;
+    }
+    .reaction-buttons button:hover {
+      background-color: #d3e3f3;
+    }
+    .reaction-count {
+      display: inline-block;
+      margin-left: 6px;
+      font-weight: 500;
+      color: #444;
+    }                              
+                                                      ---aqui termina
   </style>
 </head>
 <body>
@@ -104,6 +147,13 @@ permalink: /proyectos/
     <h3>📂 Automatización de renombrado de archivos</h3>
     <p>Script en Python que agrega fecha automáticamente al nombre de cada archivo dentro de una carpeta.</p>
     <div class="tags">🐍 Python, 🏁 Retos</div>
+
+     <div class="reaction-buttons">
+      👍 <button onclick="addReaction('py-archivos', 'like')">Me gusta <span class="reaction-count" id="like-py-archivos">0</span></button>
+      💡 <button onclick="addReaction('py-archivos', 'idea')">Interesante <span class="reaction-count" id="idea-py-archivos">0</span></button>
+      ❓ <button onclick="addReaction('py-archivos', 'question')">Tengo dudas <span class="reaction-count" id="question-py-archivos">0</span></button>
+    </div>
+    
     <a class="button" href="https://github.com/srg-info/py_archivos_fecha.git" target="_blank">Ver en GitHub</a>
   </div>
 
