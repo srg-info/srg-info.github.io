@@ -1,5 +1,5 @@
-theme: jekyll-theme-slate
-#minima
+theme: minima
+#jekyll-theme-slate
 #jekyll-theme-merlot
 #jekyll-theme-cayman
 #jekyll-theme-modernist
