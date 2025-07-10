@@ -1,0 +1,170 @@
+---
+layout: page
+title: Proyectos
+permalink: /proyectos/
+---
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Portafolio TI Profesional</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Roboto, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    h1, h2 {
+      color: #1a1a1a;
+    }
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 30px;
+    }
+    .filter-button {
+      background-color: #007acc;
+      color: white;
+      padding: 8px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .filter-button:hover {
+      background-color: #005f99;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    .card h3 {
+      margin-top: 0;
+      font-size: 1.2em;
+    }
+    .tags {
+      font-size: 0.9em;
+      color: #555;
+      margin-top: 10px;
+    }
+    .button {
+      margin-top: 10px;
+      display: inline-block;
+      background-color: #007acc;
+      color: white;
+      padding: 6px 12px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .placeholder {
+      color: #999;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+<h1>🧠 Portafolio Técnico Profesional TI</h1>
+<p>Explora mis proyectos y experiencias organizadas por categoría técnica.</p>
+
+<h2>🎛️ Categorías</h2>
+<div class="filters">
+  <button class="filter-button" onclick="filterCards('all')">🔍 Todos</button>
+  <button class="filter-button" onclick="filterCards('python')">🐍 Python</button>
+  <button class="filter-button" onclick="filterCards('seguridad')">🔐 Seguridad</button>
+  <button class="filter-button" onclick="filterCards('licencias')">💻 Software No Licenciado</button>
+  <button class="filter-button" onclick="filterCards('pentesting')">💣 Pentesting</button>
+  <button class="filter-button" onclick="filterCards('redes')">🌐 Redes</button>
+  <button class="filter-button" onclick="filterCards('bd')">🗄️ Bases de Datos</button>
+  <button class="filter-button" onclick="filterCards('java')">☕ Java</button>
+  <button class="filter-button" onclick="filterCards('laboratorio')">🧪 Laboratorios</button>
+</div>
+
+<div class="grid">
+
+  <div class="card python seguridad">
+    <h3>🔑 Verificador de integridad con Python</h3>
+    <p>Script en Python que usa SHA-256 para validar que archivos no han sido alterados.</p>
+    <div class="tags">🐍 Python, 🔐 Seguridad</div>
+    <span class="placeholder">🚧 En construcción</span>
+  </div>
+
+  <div class="card licencias seguridad">
+    <h3>🧨 Auditoría de software no licenciado</h3>
+    <p>Escaneo de estaciones con scripts para detectar programas no oficiales y generar reportes.</p>
+    <div class="tags">💻 Licencias, 🔐 Seguridad</div>
+    <span class="placeholder">🚧 En construcción</span>
+  </div>
+
+  <div class="card pentesting laboratorio seguridad">
+    <h3>💣 Pentesting básico con Metasploit</h3>
+    <p>Escaneo, explotación y pruebas de penetración usando máquinas vulnerables en laboratorio.</p>
+    <div class="tags">💣 Pentesting, 🧪 Laboratorios, 🔐 Seguridad</div>
+    <span class="placeholder">🚧 En construcción</span>
+  </div>
+
+  <div class="card redes laboratorio">
+    <h3>📡 Escaneo de red con Wireshark</h3>
+    <p>Análisis de tráfico, detección de actividad sospechosa y protocolos no cifrados.</p>
+    <div class="tags">🌐 Redes, 🧪 Laboratorios</div>
+    <span class="placeholder">🚧 En construcción</span>
+  </div>
+
+  <div class="card redes laboratorio">
+    <h3>📦 Simulaciones en Packet Tracer</h3>
+    <p>Laboratorio de redes con diseño de topologías, routing y pruebas de conectividad.</p>
+    <div class="tags">🌐 Redes, 🧪 Laboratorios</div>
+    <span class="placeholder">🚧 En construcción</span>
+  </div>
+
+  <div class="card pentesting seguridad">
+    <h3>🔍 Análisis de sitios con Burp Suite</h3>
+    <p>Evaluación de vulnerabilidades en sitios web y comportamiento sospechoso con herramientas OSINT.</p>
+    <div class="tags">💣 Pentesting, 🔐 Seguridad</div>
+    <span class="placeholder">🚧 En construcción</span>
+  </div>
+
+  <div class="card bd java">
+    <h3>☕ CRUD con Java y SQLite</h3>
+    <p>Aplicación de escritorio para gestión de inventarios con interfaz gráfica y almacenamiento local.</p>
+    <div class="tags">☕ Java, 🗄️ Bases de Datos</div>
+    <span class="placeholder">🚧 En construcción</span>
+  </div>
+
+</div>
+
+<script>
+function filterCards(category) {
+  const cards = document.querySelectorAll('.card');
+  cards.forEach(card => {
+    if (category === 'all') {
+      card.style.display = 'block';
+    } else {
+      if (card.classList.contains(category)) {
+        card.style.display = 'block';
+      } else {
+        card.style.display = 'none';
+      }
+    }
+  });
+}
+</script>
+
+</body>
+</html>
