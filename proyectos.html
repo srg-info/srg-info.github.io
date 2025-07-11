@@ -10,154 +10,114 @@ permalink: /proyectos/
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Proyectos | Portafolio TI</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <style>
     :root {
       --primary: #0a66c2;
       --bg-light: #f4f7fa;
       --text-dark: #1e1e1e;
       --text-light: #555;
-      --card-bg: #ffffff;
-      --shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      --box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     }
-
     body {
       font-family: 'Inter', sans-serif;
-      margin: 0;
-      padding: 0;
       background-color: #ffffff;
       color: var(--text-dark);
-      line-height: 1.7;
+      margin: 0;
+      padding: 0;
     }
-
     header {
       background-color: var(--bg-light);
       padding: 40px 20px;
       text-align: center;
       border-bottom: 1px solid #ddd;
     }
-
     header h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
+      font-size: 2em;
+      margin: 0 0 10px;
     }
-
     header p {
       font-size: 1.1em;
       color: var(--text-light);
     }
-
     .container {
-      max-width: 1200px;
+      max-width: 1100px;
       margin: auto;
-      padding: 20px;
+      padding: 30px 20px;
     }
-
-    h2 {
-      color: var(--primary);
-    }
-
     .filters {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
-      margin: 30px 0;
+      margin-bottom: 30px;
     }
-
     .filter-button {
       background-color: var(--primary);
-      color: #fff;
-      padding: 8px 15px;
+      color: white;
+      padding: 8px 16px;
       border: none;
-      border-radius: 5px;
+      border-radius: 6px;
       cursor: pointer;
-      font-weight: 600;
+      font-weight: bold;
     }
-
     .filter-button:hover {
-      background-color: #004b99;
+      background-color: #004a99;
     }
-
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
       gap: 20px;
     }
-
     .card {
-      background-color: var(--card-bg);
-      border: 1px solid #ddd;
-      border-radius: 8px;
+      background-color: white;
       padding: 20px;
-      box-shadow: var(--shadow);
+      border-radius: 10px;
+      box-shadow: var(--box-shadow);
+      border: 1px solid #eee;
     }
-
     .card h3 {
       margin-top: 0;
-      font-size: 1.2em;
+      font-size: 1.15em;
     }
-
     .tags {
+      margin-top: 10px;
       font-size: 0.9em;
       color: #555;
-      margin-top: 10px;
     }
-
     .button {
-      margin-top: 10px;
       display: inline-block;
+      margin-top: 10px;
       background-color: var(--primary);
       color: white;
       padding: 6px 12px;
-      border-radius: 4px;
+      border-radius: 5px;
       text-decoration: none;
       font-weight: bold;
     }
-
     .placeholder {
       color: #999;
       font-style: italic;
+      display: block;
       margin-top: 10px;
-      display: inline-block;
     }
-
-    .reaction-buttons {
-      margin-top: 15px;
-    }
-
-    .reaction-buttons button {
-      background-color: #e1ecf4;
-      border: none;
-      padding: 6px 10px;
-      margin-right: 8px;
-      border-radius: 4px;
-      cursor: pointer;
-      font-weight: 600;
-    }
-
-    .reaction-count {
-      margin-left: 5px;
-      font-weight: 500;
-    }
-
     footer {
       text-align: center;
-      margin: 60px 10px 30px;
+      margin-top: 50px;
       font-size: 0.9em;
-      color: #999;
+      color: #888;
+      padding-bottom: 30px;
     }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>🧠 Proyectos Técnicos en TI</h1>
-  <p>Explora mis desarrollos clasificados por áreas: bases de datos, automatización, redes, ciberseguridad y más.</p>
+  <h1>🧠 Portafolio Técnico TI – Proyectos</h1>
+  <p>Explora mis proyectos clasificados por área técnica. Algunos son casos reales, otros retos prácticos.</p>
 </header>
 
 <div class="container">
-
-  <h2>🎯 Filtros por categoría</h2>
+  <h2>🎯 Filtrar por categoría</h2>
   <div class="filters">
     <button class="filter-button" onclick="filterCards('all')">🔍 Todos</button>
     <button class="filter-button" onclick="filterCards('python')">🐍 Python</button>
@@ -172,64 +132,82 @@ permalink: /proyectos/
 
   <div class="grid">
 
-    <div class="card python retos" data-id="py-rename">
+    <div class="card python retos">
       <h3>📂 Automatización de renombrado de archivos</h3>
       <p>Script en Python que agrega fecha automáticamente al nombre de cada archivo dentro de una carpeta.</p>
-      <div class="tags">🐍 Python, 🏁 Retos</div>    
+      <div class="tags">🐍 Python, 🏁 Retos</div>
       <a class="button" href="https://github.com/srg-info/py_archivos_fecha.git" target="_blank">Ver en GitHub</a>
-      <div class="reaction-buttons">
-        👍 <button onclick="addReaction('py-rename', 'like')">Me gusta <span class="reaction-count" id="like-py-rename">0</span></button>
-        💡 <button onclick="addReaction('py-rename', 'idea')">Interesante <span class="reaction-count" id="idea-py-rename">0</span></button>
-        ❓ <button onclick="addReaction('py-rename', 'question')">Tengo dudas <span class="reaction-count" id="question-py-rename">0</span></button>
-      </div>
     </div>
 
-    <!-- Agrega más proyectos aquí... siguiendo el mismo patrón -->
+    <div class="card bd">
+      <h3>🗄️ Base de datos de ventas ICAIF</h3>
+      <p>Modelo relacional funcional con inserciones, consultas y control de datos en entorno educativo real.</p>
+      <div class="tags">🗄️ Bases de Datos</div>
+      <a class="button" href="https://github.com/srg-info/bd_venta_icaif.git" target="_blank">Ver en GitHub</a>
+    </div>
+
+    <div class="card python seguridad retos">
+      <h3>🔐 Verificador de integridad SHA-256</h3>
+      <p>Python para validar que archivos no han sido alterados (integridad digital). Ideal para respaldos seguros.</p>
+      <div class="tags">🐍 Python, 🔐 Seguridad, 🏁 Retos</div>
+      <span class="placeholder">🚧 En construcción</span>
+    </div>
+
+    <div class="card seguridad licencias">
+      <h3>💻 Auditoría de software no licenciado</h3>
+      <p>Escaneo de equipos para detectar programas no oficiales e informes para toma de decisiones.</p>
+      <div class="tags">🔐 Seguridad, 💻 Licencias</div>
+      <span class="placeholder">🚧 En construcción</span>
+    </div>
+
+    <div class="card pentesting laboratorio seguridad">
+      <h3>💣 Pentesting con Metasploit y máquinas virtuales</h3>
+      <p>Simulación de ataques controlados en entorno educativo con Kali Linux y Metasploit Framework.</p>
+      <div class="tags">💣 Pentesting, 🧪 Laboratorios, 🔐 Seguridad</div>
+      <span class="placeholder">🚧 En construcción</span>
+    </div>
+
+    <div class="card redes laboratorio">
+      <h3>🌐 Captura de tráfico con Wireshark</h3>
+      <p>Análisis de paquetes, detección de protocolos abiertos y monitoreo de tráfico inseguro en red doméstica.</p>
+      <div class="tags">🌐 Redes, 🧪 Laboratorios</div>
+      <span class="placeholder">🚧 En construcción</span>
+    </div>
+
+    <div class="card redes laboratorio">
+      <h3>📦 Topologías y VLANs en Packet Tracer</h3>
+      <p>Diseño de red, pruebas de conectividad, configuración de routers y switches virtuales en simulador.</p>
+      <div class="tags">🌐 Redes, 🧪 Laboratorios</div>
+      <span class="placeholder">🚧 En construcción</span>
+    </div>
+
+    <div class="card pentesting seguridad">
+      <h3>🔍 Análisis web con Burp Suite y OSINT</h3>
+      <p>Inspección de formularios, headers, tokens y búsquedas públicas en sitios de prueba.</p>
+      <div class="tags">💣 Pentesting, 🔐 Seguridad</div>
+      <span class="placeholder">🚧 En construcción</span>
+    </div>
+
+    <div class="card java bd">
+      <h3>☕ Aplicación Java CRUD + SQLite</h3>
+      <p>Gestión de inventario con interfaz gráfica en Java. Inserta, consulta, actualiza y elimina datos.</p>
+      <div class="tags">☕ Java, 🗄️ Bases de Datos</div>
+      <span class="placeholder">🚧 En construcción</span>
+    </div>
 
   </div>
-
 </div>
 
 <footer>
-  © 2025 | Portafolio técnico desarrollado con pasión, ética y aprendizaje continuo.
+  © 2025 | Proyectos realizados con conocimiento, curiosidad y buenas prácticas en TI
 </footer>
 
 <script>
 function filterCards(category) {
-  const cards = document.querySelectorAll('.card');
-  cards.forEach(card => {
-    if (category === 'all' || card.classList.contains(category)) {
-      card.style.display = 'block';
-    } else {
-      card.style.display = 'none';
-    }
+  document.querySelectorAll('.card').forEach(card => {
+    card.style.display = category === 'all' || card.classList.contains(category) ? 'block' : 'none';
   });
 }
-
-const reactions = ['like', 'idea', 'question'];
-function loadReactions(projectId) {
-  reactions.forEach(reaction => {
-    const count = localStorage.getItem(`${projectId}-${reaction}`) || 0;
-    const span = document.getElementById(`${reaction}-${projectId}`);
-    if (span) span.innerText = count;
-  });
-}
-
-function addReaction(projectId, reactionType) {
-  const key = `${projectId}-${reactionType}`;
-  let current = parseInt(localStorage.getItem(key) || '0');
-  current += 1;
-  localStorage.setItem(key, current);
-  const span = document.getElementById(`${reactionType}-${projectId}`);
-  if (span) span.innerText = current;
-}
-
-window.addEventListener('DOMContentLoaded', () => {
-  document.querySelectorAll(".card[data-id]").forEach(card => {
-    const id = card.getAttribute("data-id");
-    loadReactions(id);
-  });
-});
 </script>
 
 </body>
