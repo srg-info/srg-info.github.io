@@ -9,11 +9,7 @@ theme: minima
 
 
 title: Mi Blog
-description: © 2025 | Bienvenido a mi blog en GitHub Pages usando un tema bonito.
-##
-[srg-info]. Este contenido está licenciado bajo la licencia [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/deed.es).
-
-
+description: © 2025 [srg-info]. Este contenido está licenciado bajo la licencia [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/deed.es). | Bienvenido a mi blog en GitHub Pages usando un tema bonito.
 
 # Navegación personalizada
 header_pages:
