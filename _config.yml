@@ -8,8 +8,9 @@ theme: minima
 
 
 
-title: Mi Blog
+title: 
 description: © 2025 | Bienvenido a mi blog en GitHub Pages usando un tema bonito.
+license: CC BY-ND 4.0 + MIT para el código
 
 # Navegación personalizada
 header_pages:
